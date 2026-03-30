@@ -92,13 +92,7 @@ def focus_next1(event):
     entry2.focus_set()
     return "break"
 
-def focus_next2(event):
-    entry3.focus_set()
-    return "break"
 
 entry.bind("<Return>", focus_next1)
-entry2.bind("<Return>", focus_next2)
 entry.bind("<Tab>", focus_next1)
-entry2.bind("<Tab>", focus_next2)
-
 root.mainloop()
